@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
-import cssLogo from "../assets/cssLogo.png";
+
 type Props = {};
 
 const Skills = (props: Props) => {
@@ -27,50 +27,63 @@ const Skills = (props: Props) => {
           <Skill
             imageSource=" https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"
             directionLeft={true}
+            percentage="90%"
           />
           <Skill
             imageSource="https://cdn.iconscout.com/icon/free/png-512/css3-9-1175237.png"
             directionLeft={false}
+            percentage="90%"
+
           />
           <Skill
             imageSource="https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png "
             directionLeft={true}
+            percentage="80%"
           />
           <Skill
             imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
             directionLeft={false}
+            percentage="80%"
           />{" "}
           <Skill
             imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg"
             directionLeft={true}
+            percentage="85%"
           />
           <Skill
             imageSource="  https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png"
             directionLeft={false}
+            percentage="60%"
           />
           <Skill
             imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
             directionLeft={true}
+            percentage="40%"
           />
           <Skill
             imageSource="https://img.icons8.com/color/96/000000/mongodb.png"
             directionLeft={false}
+            percentage="40%"
           />
           <Skill
             imageSource=" https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png"
             directionLeft={true}
+            percentage="85%"
           />
           <Skill
             imageSource=" https://img.icons8.com/color/96/000000/python.png"
             directionLeft={false}
+            percentage="80%"
           />
           <Skill
             imageSource="https://img.icons8.com/color/96/000000/c-programming.png"
             directionLeft={true}
+            percentage="75%"
           />
           <Skill
             imageSource=" https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"
             directionLeft={false}
+            percentage="70%"
           />
           
         </div>
