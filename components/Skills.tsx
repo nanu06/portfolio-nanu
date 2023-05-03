@@ -23,9 +23,12 @@ const Skills = (props: Props) => {
         <h3 className="absolute top-[24%]   uppercase tracking-[3px] text-gray-500 text-sm">
           Hover over a skill for current profieciency
         </h3>
-        <div style={{ marginTop: "10rem" }} className="grid grid-cols-3 md:grid-cols-4 gap-5  ">
+        <div
+          style={{ marginTop: "10rem" }}
+          className="grid grid-cols-3 md:grid-cols-4 gap-5  "
+        >
           <Skill
-            imageSource=" https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"
+            imageSource=" https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
             directionLeft={true}
             percentage="90%"
           />
@@ -33,7 +36,6 @@ const Skills = (props: Props) => {
             imageSource="https://cdn.iconscout.com/icon/free/png-512/css3-9-1175237.png"
             directionLeft={false}
             percentage="90%"
-
           />
           <Skill
             imageSource="https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png "
@@ -51,14 +53,14 @@ const Skills = (props: Props) => {
             percentage="85%"
           />
           <Skill
-            imageSource="  https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png"
+            imageSource=" https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png "
             directionLeft={false}
             percentage="60%"
           />
           <Skill
-            imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+            imageSource="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"
             directionLeft={true}
-            percentage="40%"
+            percentage="80%"
           />
           <Skill
             imageSource="https://img.icons8.com/color/96/000000/mongodb.png"
@@ -85,7 +87,6 @@ const Skills = (props: Props) => {
             directionLeft={false}
             percentage="70%"
           />
-          
         </div>
       </motion.div>
     </>

@@ -7,6 +7,7 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
+import project6 from '../assets/project6.png'
 import Image from 'next/image'
 
 type Props = {};
@@ -49,6 +50,12 @@ const projects:Project[]= [
     image: project4,
     description: "The portfolio app is a personal website that showcases an individual's skills, projects, and experiences. It typically includes a homepage, an about page, a portfolio page, a blog, and a contact page. The purpose of the app is to provide an online presence for the individual and to showcase their work to potential clients or employers. It is often used by freelancers, creatives, and professionals to establish their personal brand and attract new opportunities.",
   },
+  {
+    id: 6,
+    name: "Summarizer",
+    image: project6,
+    description: "This app summarizes webpages using OpenAI's API. Just input a link and get a concise summary of the whole page. Our advanced algorithms analyze the text and highlight key points, making it easy for busy professionals, students, and anyone who wants to save time. With a user-friendly design, it's easy to use. Say goodbye to tedious research and try our app today.",
+  },
 ];
 
 const Projects = (props: Props) => {
@@ -80,7 +87,9 @@ const Projects = (props: Props) => {
             >
               <Image
               src={project.image}    
-              alt=""          
+              alt={project.name} 
+            
+                    
               />
             </motion.div>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
