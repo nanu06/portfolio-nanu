@@ -29,12 +29,13 @@ const Skills = (props: Props) => {
         >
           <Skill
             imageSource=" https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
-            directionLeft={true}
+            
+            directionLeft={false}
             percentage="90%"
           />
           <Skill
             imageSource="https://cdn.iconscout.com/icon/free/png-512/css3-9-1175237.png"
-            directionLeft={false}
+            directionLeft={true}
             percentage="90%"
           />
           <Skill
@@ -54,12 +55,12 @@ const Skills = (props: Props) => {
           />
           <Skill
             imageSource=" https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png "
-            directionLeft={false}
+            directionLeft={true}
             percentage="60%"
           />
           <Skill
             imageSource="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"
-            directionLeft={true}
+            directionLeft={false}
             percentage="80%"
           />
           <Skill
@@ -79,12 +80,12 @@ const Skills = (props: Props) => {
           />
           <Skill
             imageSource="https://img.icons8.com/color/96/000000/c-programming.png"
-            directionLeft={true}
+            directionLeft={false}
             percentage="75%"
           />
           <Skill
             imageSource=" https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"
-            directionLeft={false}
+            directionLeft={true}
             percentage="70%"
           />
         </div>
