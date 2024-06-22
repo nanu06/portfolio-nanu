@@ -48,17 +48,24 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    name: "Portfolio",
-    image: project4,
+    name: "Frontend Projects",
+    image: project6,
     description:
-      "The portfolio app is a personal website that showcases an individual's skills, projects, and experiences of me . It is often used by freelancers, creatives, and professionals to establish their personal brand and attract new opportunities.",
+      "This React and Tailwind CSS project is a collection of functional web applications, including a Todo App, Calculator, Weather App, Pagination Component, Search App, Form with Validation, and Chat App. Each component showcases key frontend development skills such as state management, API integration, and form handling, all styled with Tailwind CSS for a modern look.",
   },
   {
     id: 6,
     name: "Summarizer",
     image: project6,
-    description:"Summarize webpages effortlessly with our OpenAI-powered app. Get concise summaries with highlighted key points to save time. Ideal for professionals, students, and anyone looking to simplify research."
-     ,
+    description:
+      "Summarize webpages effortlessly with our OpenAI-powered app. Get concise summaries with highlighted key points to save time. Ideal for professionals, students, and anyone looking to simplify research.",
+  },
+  {
+    id: 7,
+    name: "Portfolio",
+    image: project4,
+    description:
+      "The portfolio app is a personal website that showcases an individual's skills, projects, and experiences of me . It is often used by freelancers, creatives, and professionals to establish their personal brand and attract new opportunities.",
   },
 ];
 
@@ -82,21 +89,20 @@ const Projects = (props: Props) => {
             <motion.div
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              style={{ marginTop: "8rem", width: "50%", zIndex: "1" }}
-              className="h-68 w-68 md:h-65 md:w-65 "
+              whileInView={{ opacity: 1, y: 0 }}viewport={{ once: true }}
+              style={{ marginTop: "5rem", width: "35%", zIndex: "1" }}
+              className="h-68 w-68 md:h-70 md:w-70 "
             >
               <Image src={project.image} alt={project.name} />
             </motion.div>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-3xl font-semibold text-center mb-0 pb-0">
+              <h4 className="text-2xl font-semibold text-center mb-0 pb-0">
                 <span className="underline decoration-[#F7AB0A]/50">
                   {i + 1} of {projects.length} :
                 </span>{" "}
                 {project.name}
               </h4>
-              <p className="text-base text-center md:text-left mt-0 pt-0">
+              <p className="text-base text-center md:text-center mt-0 pt-0">
                 {project.description}
               </p>
             </div>
