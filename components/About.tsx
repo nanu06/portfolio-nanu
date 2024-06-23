@@ -27,7 +27,7 @@ const About = (props: Props) => {
         <Image
           src={mee}
           alt="MyImage"
-          className="rounded-lg md:rounded-full w-48 h-48 md:w-72 md:h-72 object-cover"
+          className="rounded-full md:rounded-full w-32 h-32 mt-10   md:w-72 md:h-72 object-cover"
         />
       </motion.div>
 
@@ -38,7 +38,7 @@ const About = (props: Props) => {
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
       >
-        <h4 className="text-4xl font-semibold">
+        <h4 className="text-2xl md:text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
