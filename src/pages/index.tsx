@@ -9,19 +9,7 @@ import Projects from "../../components/Projects";
 import ContactMe from "../../components/ContactMe";
 import Image from "next/image";
 import image1 from '../images/image1.jpg'
-// import { GetStaticProps } from "next";
-// import { PageInfo, Project, Skill, Social } from "../../typing";
-// import { fetchPageInfo } from "../../utils/fetchPageInfo";
-// import { fetchSkills } from "../../utils/fetchSkills";
-// import { fetchProjects } from "../../utils/fetchProjects";
-// import { fetchSocials } from "../../utils/fetchSocials";
 
-// type Props = {
-//   // pageInfo: PageInfo;
-//   skills: Skill[];
-//   projects: Project[];
-//   socials: Social[];
-// };
 
 
 
@@ -48,6 +36,7 @@ const Home=()=> {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
+    
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
@@ -57,9 +46,7 @@ const Home=()=> {
             className="flex items-center justify-center 
           "
           >
-          
             <Image
-
               className=" rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src={image1}
               alt=""
@@ -74,18 +61,4 @@ const Home=()=> {
   
 }
 export default Home
-// export const getStaticProps: GetStaticProps<Props> = async () => {
- 
-//   const skills: Skill[] = await fetchSkills();
-//   const projects: Project []= await fetchProjects();
-//   const socials: Social[] = await fetchSocials();
 
-//   return{
-//     props:{
-    
-//       skills,
-//       projects,
-//       socials
-//     }
-//   }
-// };

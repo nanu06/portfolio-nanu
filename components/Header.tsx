@@ -45,7 +45,6 @@ function Header({}: Props) {
           bgColor="transparent"
           fgColor="gray"
         />
-       
       </motion.div>
 
       <motion.div

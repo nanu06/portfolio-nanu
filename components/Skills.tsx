@@ -1,6 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
+import htmlLogo from '../assets/htmlLogo.png'
+import cssLogo from '../assets/cssLogo.png'
+import javaScriptLogo from '../assets/javaScriptLogo.png'
+import tailwindLogo from '../assets/tailwindLogo.png'
+import reactLogo from '../assets/reactLogo.png'
+import reduxLogo from '../assets/reduxLogo.png'
+import nextLogo from '../assets/nextLogo.png'
+import typeScriptLogo from '../assets/typeScriptLogo.png'
+import nodeLogo from '../assets/nodeLogo.png'
+import mongoDbLogo from '../assets/mongoDbLogo.jpeg'
+import pythonLogo from '../assets/pythonLogo.jpeg'
+import expressLogo from '../assets/expressLogo.png'
+
 
 type Props = {};
 
@@ -25,68 +38,60 @@ const Skills = (props: Props) => {
         </h3>
         <div
           style={{ marginTop: "10rem" }}
-          className="grid grid-cols-3 md:grid-cols-4 gap-5  "
+          className="grid grid-cols-3 md:grid-cols-4 gap-8"
         >
           <Skill
-            imageSource=" https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
-            
-            directionLeft={false}
-            percentage="90%"
-          />
-          <Skill
-            imageSource="https://cdn.iconscout.com/icon/free/png-512/css3-9-1175237.png"
+            imageSource={htmlLogo}
             directionLeft={true}
             percentage="90%"
           />
+          <Skill imageSource={cssLogo} directionLeft={false} percentage="90%" />
           <Skill
-            imageSource="https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png "
-            directionLeft={true}
-            percentage="80%"
-          />
-          <Skill
-            imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
-            directionLeft={false}
-            percentage="80%"
-          />{" "}
-          <Skill
-            imageSource="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg"
+            imageSource={javaScriptLogo}
             directionLeft={true}
             percentage="85%"
           />
           <Skill
-            imageSource=" https://cdn.iconscout.com/icon/free/png-256/node-js-1-1174935.png "
-            directionLeft={true}
-            percentage="60%"
-          />
-          <Skill
-            imageSource="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"
+            imageSource={tailwindLogo}
             directionLeft={false}
             percentage="80%"
           />
+
+          <Skill imageSource={nextLogo} directionLeft={true} percentage="85%" />
           <Skill
-            imageSource="https://img.icons8.com/color/96/000000/mongodb.png"
+            imageSource={reduxLogo}
+            directionLeft={false}
+            percentage="60%"
+          />
+          <Skill
+            imageSource={reactLogo}
+            directionLeft={true}
+            percentage="90%"
+          />
+          <Skill
+            imageSource={typeScriptLogo}
             directionLeft={false}
             percentage="40%"
           />
           <Skill
-            imageSource=" https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png"
+            imageSource={nodeLogo}
             directionLeft={true}
-            percentage="85%"
+            percentage="40%"
           />
           <Skill
-            imageSource=" https://img.icons8.com/color/96/000000/python.png"
+            imageSource={mongoDbLogo}
             directionLeft={false}
-            percentage="80%"
+            percentage="40%"
           />
           <Skill
-            imageSource="https://img.icons8.com/color/96/000000/c-programming.png"
-            directionLeft={false}
-            percentage="75%"
-          />
-          <Skill
-            imageSource=" https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"
+            imageSource={pythonLogo}
             directionLeft={true}
-            percentage="70%"
+            percentage="50%"
+          />
+          <Skill
+            imageSource={expressLogo}
+            directionLeft={false}
+            percentage="35%"
           />
         </div>
       </motion.div>

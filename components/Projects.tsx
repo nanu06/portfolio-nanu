@@ -6,7 +6,10 @@ import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
+
 import Image from "next/image";
+
 
 type Props = {};
 
@@ -14,6 +17,7 @@ type Project = {
   id: number;
   name: string;
   image: any;
+
   description: string;
 };
 
@@ -22,6 +26,7 @@ const projects: Project[] = [
     id: 1,
     name: "Share-Me",
     image: project3,
+
     description:
       "Share Me is an application that allows users to share and categorize images on the internet. Users can log in using their Google ID, and once logged in, they can upload images and categorize them based on different categories. ",
   },
@@ -29,6 +34,7 @@ const projects: Project[] = [
     id: 2,
     name: "DALL-E Clone",
     image: project5,
+
     description:
       "Dalle Clone is an AI-powered image generation app built on the MERN stack. Using the OpenAI API, users can generate unique images and share them on the app. ",
   },
@@ -49,7 +55,7 @@ const projects: Project[] = [
   {
     id: 5,
     name: "Frontend Projects",
-    image: project6,
+    image: project7,
     description:
       "This React and Tailwind CSS project is a collection of functional web applications, including a Todo App, Calculator, Weather App, Pagination Component, Search App, Form with Validation, and Chat App. Each component showcases key frontend development skills such as state management, API integration, and form handling, all styled with Tailwind CSS for a modern look.",
   },
@@ -96,12 +102,15 @@ const Projects = (props: Props) => {
               <Image src={project.image} alt={project.name} />
             </motion.div>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+              
               <h4 className="text-2xl font-semibold text-center mb-0 pb-0">
                 <span className="underline decoration-[#F7AB0A]/50">
                   {i + 1} of {projects.length} :
                 </span>{" "}
                 {project.name}
               </h4>
+
+            
               <p className="text-base text-center md:text-center mt-0 pt-0">
                 {project.description}
               </p>
